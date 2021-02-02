@@ -67,3 +67,58 @@
 	
 	
 })();
+$(document).ready (function(){
+	$('#Profile').on("click", function(){
+		$('#BlockProvile').toggle();
+	});
+	$('.bblock a').on('click', function() {
+
+		let href = $(this).attr('href');
+	
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, {
+			duration: 330,   // по умолчанию «400» 
+			easing: "linear" // по умолчанию «swing» 
+		});
+	
+		return false;
+	});
+});
+function checkAvailability() {
+	$("#loaderIcon").show();
+	jQuery.ajax({
+	url: "XP.php",
+	data:'login='+$("#login").val(),
+	type: "POST",
+	success:function(data){
+	$("#user-availability-status").html(data);
+	$("#loaderIcon").hide();
+	},
+	error:function (){}
+	});
+}
+function checkAvailabilityEmail() {
+	$("#loaderIcon").show();
+	jQuery.ajax({
+	url: "XP.php",
+	data:'email='+$("#email").val(),
+	type: "POST",
+	success:function(data){
+	$("#user-email").html(data);
+	$("#loaderIcon").hide();
+	},
+	error:function (){}
+	});
+}
+function checkAvailabilityComment() {
+	jQuery.ajax({
+	url: "XP.php",
+	data:'comment='+$("#comment").val(),
+	type: "POST",
+	success:function(data){
+	$("#error_comment").html(data);
+	},
+	error:function (){}
+	});
+}
