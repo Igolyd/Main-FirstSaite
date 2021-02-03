@@ -18,7 +18,6 @@ body {
 		top: 0;
 		left: 0;
 		right: 0;
-		/* ширина на полный экран */
 		width: 100%;
 		z-index: 1;
 		/* регулировка высоты */
@@ -204,7 +203,7 @@ text-decoration: none;
 		 min-width: 400px;
 		 max-width: 2640px;
 		 color: #63f84c;
-		 border: 1px solid #9b9b9b;
+		 border: 1px solid #9b9b9b; 
 		 border-radius: 10px;
 		}
 .work{
@@ -252,10 +251,11 @@ text-decoration: none;
 	 background: #2e2e2e;
 	 min-width: 720px;
 	 max-width: 2640px;
-	 border: 1px solid #fff; /* Белая рамка */
+	 border: 1px solid #fff; 
 	 box-shadow: 0 0 13px #fff; /* Параметры теней */
-	 border-bottom: none;
 	 border-top: none;
+	 border-bottom: none;
+	 
 }
 #Registre{
 	text-align: center;
@@ -354,19 +354,19 @@ text-decoration: none;
 	text-align: center;
 	margin-top: 5%;
 }
+/* стили авторизации */
 #movereg a:visited{
 	color:#b8b8b8;
 }
 #movereg a:active{
 	color:#ececec;
 }
-/* стили авторизации */
 .row{
 	right: 1%;
 	position:absolute;
 	top: 0;
 	left: 0;
-	width: 50%;
+	width: 45%;
 	margin: 2em auto;
 	height: 50%;
 	margin: 0 auto;/*центрируем ее*/
@@ -375,7 +375,7 @@ text-decoration: none;
 	 margin-top: 10em;
 	 min-width: 400px;
 	 max-width: 2640px;
-	 border: 1px solid #fff; /* Белая рамка */
+	 border: 1px solid #fff; 
 	 box-shadow: 0 0 13px #fff; /* Параметры теней */
 }
 .from-control-auth{
@@ -406,12 +406,6 @@ text-decoration: none;
 	height: 2em;
 	margin-top: 5.5%;
 	margin-left: 22%;
-}
-#user-availability-status-auth{
-	margin-left: 1em;
-	top: 2em;
-	width: 7em;
-	height: 1em;
 }
 /* Стили для комментариев */
 .ListBlock{
