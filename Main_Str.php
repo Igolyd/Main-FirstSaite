@@ -61,6 +61,10 @@
 Выживание предстоит среди тех существ, коих невозможно победить вашими силами. Игра находится в ранней альфа-версии. Ожидаемый выход ещё не определён. 
 Моя роль в создании этой игры- главный программист. Игра разработана на языке C Sharp.</div>
 	</div>
+	<div class ="Prvio">
+	<div><img src="/img/FightAli.jpg" alt="Fight" class="blockprevio" /></div>
+	<div><img src="/img/Run.jpg" alt="Run" class="blockprevio" /></div>
+	</div>
 	<br><br><br><br><br><br><br><br><br>
 	<h1>Биография</h1>
 	<p id ="Cont"></p>

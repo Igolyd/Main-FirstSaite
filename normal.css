@@ -20,7 +20,6 @@ body {
 		right: 0;
 		/* ширина на полный экран */
 		width: 100%;
-		/* самый "первый" блок */
 		z-index: 1;
 		/* регулировка высоты */
 		height: 8.5%;
@@ -59,7 +58,7 @@ text-decoration: none;
 	text-decoration: none;
 }
 .wrap > .bblock:last-child {
-	margin-right: -2.3%;/*Убираем поле последнего div-а*/
+	margin-right: -2.3%;
 	margin-top: 0.6%;
 	width: 4%;
 	margin-left: 14.1%;
@@ -109,13 +108,13 @@ text-decoration: none;
 	margin-top: 0.8%;
 }
 #Names{
-	margin-right: -0.4%;/*Убираем поле последнего div-а*/
+	margin-right: -0.4%;
 	margin-left:2.5%;
 	margin-top: 0.8%;
 	width:6%;
 }
 #WorkStr{
-	margin-right: -0.4%;/*Убираем поле последнего div-а*/
+	margin-right: -0.4%;
 }
 /* Стили для Slide */
 .slider {
@@ -195,9 +194,7 @@ text-decoration: none;
 		top: 0;
 		left: 0;
 		right: 0;
-		/* ширина на полный экран */
 		width: 50%;
-		/* самый "первый" блок */
 		z-index: 0;
 		/* регулировка высоты */
 		height: 80%;
@@ -207,7 +204,7 @@ text-decoration: none;
 		 min-width: 400px;
 		 max-width: 2640px;
 		 color: #63f84c;
-		 border: 1px solid #9b9b9b; /* Белая рамка */
+		 border: 1px solid #9b9b9b;
 		 border-radius: 10px;
 		}
 .work{
@@ -217,6 +214,29 @@ text-decoration: none;
 	min-width: 400px;
 	max-width: 2640px;
 	font-size: 1.3em;
+}
+.blockprevio{
+	width: 310px;
+	height: 200px;
+	float: left;
+	margin-left: 12%;
+	margin-top: 6%;
+	border: 2px solid #36c020;
+	border-radius: 10px;
+}
+.Prvio{
+	top: 0;
+	left: 0;
+	right: 20%;
+	width: 54%;
+	/* самый "первый" блок */
+	z-index: 0;
+	height: 20em;
+	/* регулировка высоты */
+	 margin: 0 auto;/*центрируем ее*/
+	 /* бэграунд цвет */
+	 min-width: 200px;
+	 max-width: 2640px;
 }
  /* стили регистрации */
 .continer{
@@ -232,6 +252,10 @@ text-decoration: none;
 	 background: #2e2e2e;
 	 min-width: 720px;
 	 max-width: 2640px;
+	 border: 1px solid #fff; /* Белая рамка */
+	 box-shadow: 0 0 13px #fff; /* Параметры теней */
+	 border-bottom: none;
+	 border-top: none;
 }
 #Registre{
 	text-align: center;
@@ -239,12 +263,11 @@ text-decoration: none;
 }
 .from-control{
 	width: 100%;
-	height: 5em;
+	height: 14%;
 	margin-top: 6%;
 	margin-left: 5%;
 	min-width: 400px;
 	max-width: 2640px;
-	/* background-color: blueviolet; */
 }
 .btn{
 	width: 20em;
@@ -330,7 +353,6 @@ text-decoration: none;
 #movereg{
 	text-align: center;
 	margin-top: 5%;
-	margin-left: 2em;
 }
 #movereg a:visited{
 	color:#b8b8b8;
@@ -353,12 +375,14 @@ text-decoration: none;
 	 margin-top: 10em;
 	 min-width: 400px;
 	 max-width: 2640px;
+	 border: 1px solid #fff; /* Белая рамка */
+	 box-shadow: 0 0 13px #fff; /* Параметры теней */
 }
 .from-control-auth{
 	width: 60%;
 	height: 5em;
 	margin-top: 2%;
-	margin-left: 27%;
+	margin-left: 20%;
 	min-width: 200px;
 	max-width: 2640px;
 }
@@ -366,7 +390,6 @@ text-decoration: none;
 	right: 0%;
 	left: 0;
 	width: 50%;
-	margin: 2em auto;
 	margin-top: 10%;
 	height: 35em;
 	margin: 0 auto;/*центрируем ее*/
@@ -382,7 +405,7 @@ text-decoration: none;
 	width: 20em;
 	height: 2em;
 	margin-top: 5.5%;
-	margin-left: 28%;
+	margin-left: 22%;
 }
 #user-availability-status-auth{
 	margin-left: 1em;
@@ -402,9 +425,7 @@ text-decoration: none;
 }
 .CommentBlock{
 	right: 20%;
-	/* ширина на полный экран */
 	width: 60%;
-	/* самый "первый" блок */
 	z-index: 0;
 	/* регулировка высоты */
 	height: auto;
@@ -413,7 +434,7 @@ text-decoration: none;
 	 background: #303030;
 	 min-width: 400px;
 	 max-width: 2640px;
-	 border: 1px solid #9b9b9b; /* Белая рамка */
+	 border: 1px solid #9b9b9b;
 	 border-radius: 10px;
 	 border-bottom: none;
 	 border-bottom-left-radius: 0px;
@@ -521,9 +542,7 @@ h1{
 	top: 0;
 	left: 0;
 	right: 20%;
-	/* ширина на полный экран */
 	width: 54%;
-	/* самый "первый" блок */
 	z-index: 0;
 	/* регулировка высоты */
 	height: 5em;
@@ -533,7 +552,7 @@ h1{
 	 min-width: 200px;
 	 max-width: 2640px;
 	 color: #63f84c;
-	 border: 1px solid #9b9b9b; /* Белая рамка */
+	 border: 1px solid #9b9b9b; 
 	 border-radius: 10px;
 }
 .ContacBlock

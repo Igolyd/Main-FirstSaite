@@ -46,9 +46,8 @@ if($login === mb_strtoupper($login)) {
     exit();
 }
 $password = crypt($password,"frfregfvdvgfrgrfewrgerfsdxvy5465yjyhbfxhjnmhvjch");
-$hash = crypt($password . time(),"frfregfvdvgfrgrfewrgerfsdxvy5465yjyhbfxhjnmhvjch");
-$mysql->query("INSERT INTO `users`(`login`, `password`, `email`,`hesh`,`email_confirm`) 
-VALUES('$login','$password','$email','$hash','1')");
+$mysql->query("INSERT INTO `users`(`login`, `password`, `email`) 
+VALUES('$login','$password','$email')");
 $mysql->close();
 
 header('Location: /Main_Str.php');
