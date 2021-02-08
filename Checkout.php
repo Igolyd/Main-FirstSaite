@@ -13,36 +13,29 @@ $qesuilt = $mysql->query("SELECT * FROM `users` WHERE `email` = '$email'");
 similar_text($password,$replaypassword, $perc);
 
 if(mb_strlen($login) < 3 || mb_strlen($login) > 70){
-    echo "Pisdes5";
     exit(); 
 }
     if(mb_strlen($password) < 5 || mb_strlen($password) > 90){
     exit();
 }
     if(!preg_match('/@/', $email)){
-    echo "Pisdes6";
     exit(); 
 }
     if(!$perc == 100){
-    echo "Pisdes7";
     exit(); 
 }
 if($login === mb_strtoupper($login)) {
     if(mb_strlen($login) > 50){
-        echo "Pisd";
         exit(); 
     }
  }
     if(!mysqli_num_rows($wesuilt) == 0){
-    echo "Pisdes8";
     exit(); 
 }
     if(!mysqli_num_rows($qesuilt) == 0){
-    echo "Pisdes9";
     exit();
 }
     if(!preg_match("#^[aA-zZ0-9\-_]+$#", $login) && !preg_match('#^[aA-zZ0-9\-_]+$#', $password) && !preg_match('/[A-Z]/', $password)  && !preg_match('/[0-9]/', $password)){
-    echo "Pisdes10";
     exit();
 }
 $password = crypt($password,"frfregfvdvgfrgrfewrgerfsdxvy5465yjyhbfxhjnmhvjch");

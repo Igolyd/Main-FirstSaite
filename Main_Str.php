@@ -18,7 +18,7 @@
 				<div class="bblock" id = "ProvileBlock">
 				<img src="/img/Empty.png" alt="Fourd" id ="Profile"/>
 				<div id ="BlockProvile" style="display: none;">
-				<button class = "ButtonProvile"><a href="/exit.php">Выйти из аккаунта</a></button>
+				<a href="/exit.php"><button class = "ButtonProvile">Выйти из аккаунта</button></a>
 				</div>
 			</div>
 			<?php endif;?>
@@ -43,19 +43,17 @@
 		<button class="slider-next"></button>
 	</div>
 </div>
-<p id ="Saite"></p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<h1>О работах</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><p id ="Saite"></p><br><br><br><br><br>
+	<h1 id ="AbWork">О работах</h1>
 	<h3>О сайте</h3>
 	<div class ="bgwork">
 	<div class ="work" id ="AboutSite">Я сделал этот сайт, чтобы показать мои навыки в web-программировании. Особенно в back-end'еге. 
-И я думаю, передать информацию о себе и о своих проектах будет удобнее через сайт. Сайт создавался 2,5 недели.
+И я думаю, передать информацию о себе и о своих проектах будет удобнее через сайт. Сайт создавался 4,5 недели.
 На сайте используется JavaScript, PHP7, JQuery, Ajax, MySQL5(ну и конечно HTML5 ии CSS)
-Многие усилия потрачены на PHP, JS и MySQL. Сайт пока плохо оптимизирован</div>
+Многие усилия потрачены на PHP, JS и MySQL. Сайт поддерживает  разришение экрано с 800x600 до 5120x2880.</div>
 	</div>
 	<br><br><br><br><br>
 	<h3>Об игре "Egypt Madness"</h3>
-	<p id ="BIO"></p>
 	<div class ="bgwork">
 		<div class ="work" id ="AboutGame">"Egypt Madness" - игра в жанре хардкор/бродилка. Сюжет повествует о приключениях человека по имени Али. Вначале, события игры разворачиваются в чудном Древнем Египте, но вскоре перетекают в пирамиду Хефрена. Графика в 2D стилистике, анимационная. В игре вас ожидают фантастические места таинственного Египта и пирамиды, а также Борьба с немыслимыми существами, обитающими там. 
 Выживание предстоит среди тех существ, коих невозможно победить вашими силами. Игра находится в ранней альфа-версии. Ожидаемый выход ещё не определён. 
@@ -65,7 +63,7 @@
 	<div><img src="/img/FightAli.jpg" alt="Fight" class="blockprevio" /></div>
 	<div><img src="/img/Run.jpg" alt="Run" class="blockprevio" /></div>
 	</div>
-	<br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><p id ="BIO"></p><br><br><br><br><br>
 	<h1>Биография</h1>
 	<p id ="Cont"></p>
 	<div class ="bgwork">
@@ -81,14 +79,14 @@
 	<h1>Контакты</h1>
 	<div class ="bgwcont">
 		<div class="ContacBlock" >Мой аккаунт в GitHub</div>
-		<div class="ContacBlock">
+		<div class="ContacBlock" id ="GitBlock">
 		<a href="https://github.com/Igolyd"><img src="/img/GitHub.png" alt="GitHub" class="imgcont" id="GitHub" /></a>
 		</div>
 		<div class="ContacBlock"> Вк</div>
-		<div class="ContacBlock">
+		<div class="ContacBlock" id ="VKBlock">
 		<a href="https://vk.com/igolyd"><img src="/img/VK.png" alt="VK" class="imgcont" id="VK" /></a>
 		</div>
-		<div class="ContacBlock" >Почта: gafden719@gmail.com</div>
+		<div class="ContacBlock" id="emailcont" >Почта: gafden719@gmail.com</div>
 	</div>
 	<p id ="Comentra"></p>
 	<br><br><br><br><br><br>
@@ -99,7 +97,6 @@
 	<p style="color: #63f84c;"  class="Guper">Необходимо <a href="reg.php">зарегистрироваться</a>/<a href="auth.php">войти</a> для написания комментария</p>
 	<?php else: ?>
 	<form action="Comment.php" method="post">
-	<div id="WarrningPlace"><p>*Длинна символов максимум 145 и максимум 65 из них строчные(верхнем регистре), перенос на следующую строку не допускается</p></div>
 	<textarea type="text" name="comment" id="comment" placeholder="Оставьте комментарий" cols="30" rows="5" required onBlur="checkAvailabilityComment()"></textarea>
 	<div id="error_comment"></div>
 	<input type="submit" id="BtnSub">

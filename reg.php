@@ -11,20 +11,19 @@
 <h1 id="Registre">Регистрация</h1> 
 <form action="Checkout.php" method="post">
 <div class ="Unit">
-<div class="from-control" id="error_regpassword"> *В логине и в пароле используеться только латинициа<br/>В пароле ещё обязательна должна быть как минимум одна заглавная и одна цифра</div>
-<input type="text" class="from-control" onclick="eText" name="login" id="login" placeholder ="Введите логин" onBlur="checkAvailability()">
+<div class="from-control"  id="error_regpassword"> *В логине и в пароле используеться только латинициа<br/>В пароле ещё обязательна должна быть как минимум одна заглавная и одна цифра</div>
+<input type="text" required class="from-control" onclick="eText" name="login" id="login" placeholder ="Введите логин..." onBlur="checkAvailability()">
 <div class="from-control" id="error_login"></div>
-<div id='user-availability-status'></div>
-<input type="text" class="from-control" onclick="IncloudeText" name="email" id="email" placeholder ="Введите почту" onBlur="checkAvailabilityEmail()">
+<div id='user-availability-status' class="fromocon"></div>
+<input type="text" required class="from-control" onclick="IncloudeText" name="email" id="email" placeholder ="Введите почту..." onBlur="checkAvailabilityEmail()">
 <div class="from-control" id="error_email"></div>
-<div id='user-email'></div>
-<input type="password" class="from-control" onclick="InceText" name="password" id="password" placeholder ="Введите пароль" onBlur="checkAvailabilityPass()">
+<div id='user-email' class="fromocon"></div>
+<input type="password" required class="from-control" onclick="InceText" name="password" id="password" placeholder ="Введите пароль..." onBlur="checkAvailabilityPass()">
 <div class="from-control" id="error_password"></div>
-<input type="password" class="from-control" name="replaypassword" id="replaypassword" placeholder ="Введите пароль снова">
+<input type="password" required class="from-control" name="replaypassword" id="replaypassword" placeholder ="Введите пароль снова...">
 <div class="from-control" id="error_replaypassword"></div>
 <span class="from-control" id="moveauth"><a href="auth.php">Войти</a> если уже зарегистрированы</span>
 <button class="btn" type="submit">Зарегистрироваться</button>
-<p><img src="img/loading.gif" id="loaderIcon" style="display:none" /></p>
 </div>
 </form>
 </div>

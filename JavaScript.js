@@ -122,3 +122,18 @@ function checkAvailabilityComment() {
 	error:function (){}
 	});
 }
+// window.addEventListener("resize", changeCss); //Масштабируем страницу при растягивании окна
+
+// changeCss(); //Масштабируем страницу после загрузки
+
+// function  changeCss() {
+// var w = window.innerWidth;
+// if(w >= '1600' && w <= '3440'){
+// 	document.getElementById("stylesheet").href="normal.css";
+// }
+// else if(w < '1600' && w >= '1024'){
+// 	document.getElementById("stylesheet").href="small.css";
+// }
+// else if(w <= '5120' && w > '3440')
+// document.getElementById("stylesheet").href="big.css";
+// }
