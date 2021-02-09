@@ -47,7 +47,7 @@ body {
 		height: calc(45px + (110 - 45) * ( (100vw - 1600px) / ( 5120 - 1600) ));
 	}
 	img.imgcont{
-		min-width: calc(62px + (100 - 62) * ( (100vw - 1600px) / ( 5120 - 1600) ));
+		min-width: calc(52px + (130 - 52) * ( (100vw - 1600px) / ( 5120 - 1600) ));
 	}
 	img#VK{
 		margin-left: calc(-3% + (42 - 3) * ( (100vw - 1600px) / ( 5120 - 1600) ));
@@ -170,7 +170,7 @@ body {
 		margin-left: 9.5em;
 	}
 	button.btna{
-		margin-left: 35%;
+		margin-left: calc(37% + (55 - 37) * ( (100vw - 800px) / ( 1580 - 800) ));;
 	}
 }
 .bblock {
